@@ -24,7 +24,7 @@
 
     --bd_activity
     null as bd_activity,
-    campaignid as campiagn_id,
+    campaignid as campaign_id,
     description,
     dp_bid_type__c as bid_type,
     dp_billing_md__c as billing_md,
