@@ -45,3 +45,5 @@ models:
         +materialized: table
       dimension:
         +materialized: table
+    mart:
+      +materialized: table

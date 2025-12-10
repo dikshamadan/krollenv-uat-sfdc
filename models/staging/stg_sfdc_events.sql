@@ -16,4 +16,4 @@ SELECT
     dp_meeting_objective__c as meeting_objective,
     dp_type__c as type
 
-FROM {{source('uat-sfdc', 'sdfc_event')}}
+FROM {{source('uat-sfdc', 'sfdc_event')}}

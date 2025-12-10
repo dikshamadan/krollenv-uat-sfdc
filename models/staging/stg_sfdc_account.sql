@@ -29,9 +29,9 @@ SELECT
     null as pe_geo_interest,
 
     --dp_pe_industry_criteria__c
-    null as pe_industry_criteria,
+    null as pe_industry_criteria
 
-FROM {{source('uat-sfdc', 'sfdc_account')}}
+FROM {{source("uat-sfdc", "sfdc_account")}}
  
  
  

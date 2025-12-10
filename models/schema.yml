@@ -9,32 +9,40 @@ sources:
       - name: sfdc_event
       - name: sfdc_opportunity
 
-models:
-  - name: dim_account
-    columns:
-      - name: account_id
-        tests:
-          - unique
-          - not_null
+  - name: ga_data
+    database: ifs_abm_uat
+    schema: raw_data
+    tables:
+      - name: campaign_ga
+      - name: page_ga
+      - name: sessions_ga
 
-  - name: fact_account
-    columns:
-      - name: account_id
-        tests:
-          - unique
-          - not_null
-          - relationships:
-              arguments:
-                to: ref('dim_account')
-                field: account_id
-  - name: fact_opportunity
-    columns:
-      - name: account_id
-        tests:
-          - not_null
-          - relationships:
-              arguments:
-                to: ref('dim_account')
-                field: account_id
+# models:
+#   - name: dim_account
+#     columns:
+#       - name: account_id
+#         tests:
+#           - unique
+#           - not_null
+
+#   - name: fact_account
+#     columns:
+#       - name: account_id
+#         tests:
+#           - unique
+#           - not_null
+#           - relationships:
+#               arguments:
+#                 to: ref('dim_account')
+#                 field: account_id
+#   - name: fact_opportunity
+#     columns:
+#       - name: account_id
+#         tests:
+#           - not_null
+#           - relationships:
+#               arguments:
+#                 to: ref('dim_account')
+#                 field: account_id
 
   
