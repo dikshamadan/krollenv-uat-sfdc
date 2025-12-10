@@ -3,7 +3,7 @@ SELECT
     account_id,
     type,
     abm_tag,
-    dynamics last_integration_ts,
+    dynamics_last_integration_ts,
 
     dynamics_quote_number,
     dynamics_quote_link,

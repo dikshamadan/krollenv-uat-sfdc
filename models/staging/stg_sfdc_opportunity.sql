@@ -11,7 +11,7 @@
 
     --abm_tag__c
     null as abm_tag,
-    cast(dp_dynamics_last_integration_date__c as timestamp) as dynamics last_integration_ts,
+    cast(dp_dynamics_last_integration_date__c as timestamp) as dynamics_last_integration_ts,
 
     dp_dynamics_quote_number__c as dynamics_quote_number,
     dp_dynamics_quote_link__c as dynamics_quote_link,

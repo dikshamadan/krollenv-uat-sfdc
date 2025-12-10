@@ -1,7 +1,7 @@
 SELECT
     *
 
-FROM {{source('stg_sfdc_account')}}
+FROM {{ref('stg_sfdc_account')}}
  
  
  

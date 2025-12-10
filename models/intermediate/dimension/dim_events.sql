@@ -1,8 +1,8 @@
 SELECT
 
-    id as event_id,
-    whoid as who_id,
-    whatid as what_id,
+    event_id,
+    who_id,
+   what_id,
     subject,
     account_id,
     
