@@ -10,7 +10,7 @@
     type,
 
     --abm_tag__c
-    null as abm_tag,
+    'blank' as abm_tag,
     cast(dp_dynamics_last_integration_date__c as timestamp) as dynamics_last_integration_ts,
 
     dp_dynamics_quote_number__c as dynamics_quote_number,
@@ -19,11 +19,11 @@
     dp_interfaced_to_dynamics__c as interfaced_to_dynamics,
 
     --dynamic_probablity__c
-    null as dynamic_probability,
+    0 as dynamic_probability,
     dp_msa__c as msa,
 
     --bd_activity
-    null as bd_activity,
+    0 as bd_activity,
     campaignid as campaign_id,
     description,
     dp_bid_type__c as bid_type,

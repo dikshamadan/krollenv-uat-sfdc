@@ -8,10 +8,10 @@ SELECT
     CAST(activitydatetime as timestamp) as activity_ts,
 
     --outcome__c
-    null as outcome,
+    0 as outcome,
 
     --db_activity_type__c
-    null as activity_type,
+    'blank' as activity_type,
     dp_event_status__c as event_status,
     dp_meeting_objective__c as meeting_objective,
     dp_type__c as type

@@ -10,10 +10,10 @@ SELECT
     dp_account_tags__c as account_tags,
     dp_client__c as client_status,
     dp_type__c as type,
-    null as account_source,
+    'blank' as account_source,
 
     --dp_area_ofinterest__c
-    null as area_of_interest,
+    'blank' as area_of_interest,
     dp_dynamic_party_id__c as dynamics_party_id,
     dp_dynamics_account_number__c as dynamics_account_number,
     dp_fund_type_preferences__c as fund_type_preferences,
@@ -23,13 +23,13 @@ SELECT
     dp_key_account__c as key_account_name,
 
     --dp_notes__c
-    null as notes,
+    'blank' as notes,
 
     --dp_pe_geography_interest__c
-    null as pe_geo_interest,
+    'blank' as pe_geo_interest,
 
     --dp_pe_industry_criteria__c
-    null as pe_industry_criteria
+    'blank' as pe_industry_criteria
 
 FROM {{source("uat-sfdc", "sfdc_account")}}
  

@@ -16,6 +16,7 @@ sources:
       - name: campaign_ga
       - name: page_ga
       - name: sessions_ga
+      - name: pages_users
 
 # models:
 #   - name: dim_account
