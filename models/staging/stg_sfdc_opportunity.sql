@@ -3,7 +3,7 @@
     id as opportunity_id,
     accountid as account_id,
     stagename as stage_name,
-    amount,
+    cast(amount as int) as amount,
     closedate as closed_date,
     isclosed as is_closed,
     iswon as is_won,
